@@ -12,7 +12,7 @@ function PizzaCard({pizza}) {
       <Card.Img variant="top" src={pizza.img} />
       <Card.Body>
         <Card.Title>{pizza.name}</Card.Title>
-        <Card.Text>
+        
         <p style={{fontWeight: 'bold', fontSize: '20px'}}>Ingredientes:</p>
         <ul>
         {pizza.ingredients.map((ingredient, index) => (
@@ -20,7 +20,7 @@ function PizzaCard({pizza}) {
         ))}
         </ul>
         <p style={{fontWeight: 'bold', fontSize: '30px'}}>${pizza.price}</p>
-        </Card.Text>
+        
         <div className='d-flex justify-content-evenly'>
         <Button variant="primary" onClick={() => funtiondetails()}>Ver más</Button>{' '}
         <Button variant="danger">Añadir</Button>

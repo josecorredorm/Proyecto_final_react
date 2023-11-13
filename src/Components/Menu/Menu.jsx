@@ -4,7 +4,6 @@ import PizzaCard from "../Cards/PizzaCard"
 import { MyContextData } from "../../Context/MyContextData"
 const Menu = () => {
     const {DataPizza, setDataPizza} = useContext(MyContextData);
-    console.log(DataPizza)
   return (
     <div>
       <Banner />
