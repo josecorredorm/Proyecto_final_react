@@ -1,0 +1,14 @@
+.navContainer{
+    height: 100px;
+    width: 100%;
+}
+.IconImg{
+    width: 50px;
+    height: 50px;
+}
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
