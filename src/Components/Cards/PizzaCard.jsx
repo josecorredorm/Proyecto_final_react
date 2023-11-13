@@ -1,11 +1,18 @@
+import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useNavigate } from 'react-router-dom';
+import { MyContextData } from '../../Context/MyContextData';
 
 function PizzaCard({pizza}) {
+  const { Pedido, setPedido} = useContext(MyContextData);
   const navigate = useNavigate();
   const  funtiondetails = () => {
     navigate(`/pizza/${pizza.id}`)
+  }
+  const functioncars = () => {
+    navigate('/carrito')
+    setPedido([...Pedido, pizza])
   }
   return (
     <Card style={{ width: '20rem'}}>
@@ -23,7 +30,7 @@ function PizzaCard({pizza}) {
         
         <div className='d-flex justify-content-evenly'>
         <Button variant="primary" onClick={() => funtiondetails()}>Ver más</Button>{' '}
-        <Button variant="danger">Añadir</Button>
+        <Button variant="danger" onClick={() => functioncars()}>Añadir</Button>
         </div>
       </Card.Body>
     </Card>
