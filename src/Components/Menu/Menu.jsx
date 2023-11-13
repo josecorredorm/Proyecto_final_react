@@ -8,7 +8,7 @@ const Menu = () => {
   return (
     <div>
       <Banner />
-      <div className="container">
+      <div className="container d-flex flex-wrap justify-content-center gap-5 pt-5 ">
       {DataPizza.map((pizza) => (
         <PizzaCard key={pizza.id} pizza={pizza} />
       ))}

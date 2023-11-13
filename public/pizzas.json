@@ -36,7 +36,7 @@
     "id": "P005",
     "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-salame.jpg?alt=media&token=ab3d4bf8-01f2-4810-982b-bd7fb6b517b2",
     "ingredients": ["mozzarella", "tomates cherry", "bacon", "orégano"],
-    "name": "bacon",
+    "name": "Bacon",
     "price": 6450
   },
   {
@@ -44,7 +44,7 @@
     "id": "P006",
     "img": "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-2000595_640_c.jpg?alt=media&token=61325b6e-a1e0-441e-b3b5-7335ba13e8be",
     "ingredients": ["mozzarella", "pimientos", "pollo grillé", "orégano"],
-    "name": "pollo picante",
+    "name": "Pollo picante",
     "price": 8500
   }
 ]
