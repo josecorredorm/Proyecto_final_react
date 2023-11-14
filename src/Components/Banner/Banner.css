@@ -2,14 +2,15 @@
     background-image: url('../../../public/banner_pizza.jpg');
     background-size: cover;
     background-position: center;
+    margin-top: 80px;
     height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
     text-align: center;
+    backdrop-filter: 'blur(5px)';
 }
 .banner h1{
     color: white;
@@ -18,3 +19,19 @@
 .banner h4{
     font-weight: bold;
 }
+.verde{
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+}
+.blanco{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+.rojo{
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+

@@ -12,3 +12,18 @@
     font-size: large;
     font-weight: bold;
 }
+.verdelogo{
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+.blancologo{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.rojologo{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}

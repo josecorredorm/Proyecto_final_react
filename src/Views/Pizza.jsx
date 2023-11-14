@@ -4,10 +4,10 @@ import { MyContextData } from "../Context/MyContextData";
 import { Button } from "react-bootstrap";
 
 const Pizza = () => {
-    const {DataPizza, setDataPizza} = useContext(MyContextData);
+    const {DataPizza, functionAdd} = useContext(MyContextData);
     const { id } = useParams()
   return (
-    <div>
+    <div style={{marginTop: '100px'}}>
       {DataPizza.map((pizza) => {
           if(pizza.id === id){
             return(
@@ -26,7 +26,7 @@ const Pizza = () => {
                         <span style={{fontWeight: 'bold', fontSize: '25px'}}>Precio: ${pizza.price}</span>
                         <div className="d-flex justify-content-evenly gap-3" >
                         <Button variant="primary"onClick={() => window.history.back()}>Atras</Button>
-                        <Button variant="danger">Añadir</Button>
+                        <Button variant="success" onClick={() => functionAdd(pizza)}>Añadir</Button>
                         </div>
                         </div>
                     </div>
