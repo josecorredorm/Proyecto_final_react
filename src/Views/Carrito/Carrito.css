@@ -1,0 +1,27 @@
+.viewCarrito{
+    margin-top: 150px;
+    width: 100%;
+}
+.carContainer{
+    width: 100%;
+}
+.imgContainer{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.princeandcount{
+    padding-top: 15px;
+    font-size: 20px;
+}
+.imgandprinceContainer{
+    width: 50%;
+}
+.totalPrice{
+    font-weight: bold;
+    font-size: 20px;
+}
+.ButtonPayContainer{
+    width: 100%;
+}

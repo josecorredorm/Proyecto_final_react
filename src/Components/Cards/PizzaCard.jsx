@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { useNavigate } from 'react-router-dom';
 import { MyContextData } from '../../Context/MyContextData';
 
+
 function PizzaCard({pizza}) {
   
   const {functionAdd} = useContext(MyContextData);
@@ -17,13 +18,13 @@ function PizzaCard({pizza}) {
       <Card.Body>
         <Card.Title>{pizza.name}</Card.Title>
         
-        <p style={{fontWeight: 'bold', fontSize: '20px'}}>Ingredientes:</p>
+        <p className='textCard'>Ingredientes:</p>
         <ul>
         {pizza.ingredients.map((ingredient, index) => (
           <li key={index}>{ingredient}</li>
         ))}
         </ul>
-        <p style={{fontWeight: 'bold', fontSize: '30px'}}>${pizza.price.toLocaleString("en-US")}</p>
+        <p className='PriceCard' >${pizza.price.toLocaleString("en-US")}</p>
         
         <div className='d-flex justify-content-evenly'>
         <Button variant="primary" onClick={() => funtiondetails()}>Ver más</Button>{' '}
